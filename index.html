@@ -1,67 +1,50 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <title>Gmail login page source code download</title>
 </head>
 <body>
+    <center>
+        <div class="base">
+            <div id="logo">
+                <img src="logo.png" width="118" height="38" />
+            </div>
+            <div id="info1">
+                One account. All of Google.
+            </div>
+            <div id="info2">
+                Sign in to continue to Gmail
+            </div>
+            <div id="form1">
+                <div id="form-img">
+                    <img src="profile-img.png" width="99" height="99" />
+                </div>
+                <div id="mailbox">
+                    <input placeholder="Enter or phone" type="mail" name="name" style="width:270px; height:42px; border: solid 1px #c2c4c6; font-size:16px; padding-left:8px;" />
+                </div>
+                <div>
+                    <input type="submit" id="button2" value="Next" />
+                </div>
+                <div id="info3">
+                    <a href="#">Need help?</a>
+                </div>
+            </div>
+            <div id="info4">
+                <a href="#">Create account</a>
+            </div>
+            <div id="info5">
+                One Google Account for everything Google
+            </div>
+            <div>
+                <img src="footer-logo.png" id="logo2" />
+            </div>
 
-<h3>Contact Form</h3>
+            <div id="bottom">
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
+            </div>
+        </div>
+    </center>
 </body>
 </html>
