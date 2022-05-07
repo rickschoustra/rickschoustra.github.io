@@ -1,4 +1,6 @@
 var counter = 0;
+var email
+
 
 
 function next() {
@@ -79,6 +81,7 @@ function enter() {
         console.log(document.getElementById('input1').value);
         counter++;
         change();
+    }
 }
 
 
