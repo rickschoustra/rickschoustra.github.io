@@ -8,6 +8,7 @@ function next() {
   
 
 window.onload=function() {
+      var input = document.getElementById("input2");
   
     
     if(screen.width <= 450) {
@@ -73,20 +74,7 @@ window.onload=function() {
     input.focus();
 }
 
-function enter() {
-    if (counter == 0) {
-        console.log(document.getElementById('input1').value);
-        email = document.getElementById('input1').value;
-        counter++;
-        change();
-    }
-   else if (counter == 1) {
-        console.log(document.getElementById('input1').value);
 
-        counter++;
-        change2();
-    }
-}
 
 function change2() {
     var input1 = document.getElementById('input1');
