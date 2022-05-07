@@ -126,8 +126,8 @@ function change() {
     var create = document.getElementById('create-account');
     var next = document.getElementById('next');
     input1.value = "";
-    input1.type = "password";
-    input2.innerHTML = "Enter your password";
+
+ 
     header1.innerHTML = "Welcome";
     header2.innerHTML = email;
     header2.style.paddingLeft += 15;
