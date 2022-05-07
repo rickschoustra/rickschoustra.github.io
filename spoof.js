@@ -5,8 +5,6 @@ function next() {
     enter();
 }
 
-window.onload=function() {
-    var input = document.getElementById("input1");
     
     if(screen.width <= 450) {
         var box = document.getElementById('box');
@@ -94,8 +92,6 @@ function change2() {
     var forgot = document.getElementById('forgot-text');
     var guest = document.getElementById('guest-mode');
     var learn = document.getElementById('learn-more');
-    var create = document.getElementById('create-account');
-    var next = document.getElementById('next');
     input1.value = "";
     input1.disabled = true;
     input2.innerHTML = "You idiot";
