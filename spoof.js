@@ -1,6 +1,6 @@
 var counter = 0;
 var email
-var password;
+
 
 function next() {
     enter();
@@ -78,13 +78,6 @@ function enter() {
         email = document.getElementById('input1').value;
         counter++;
         change();
-    }
-   else if (counter == 1) {
-        console.log(document.getElementById('input1').value);
-        password = document.getElementById('input1').value;
-        counter++;
-        change2();
-    }
 }
 
 function change2() {
@@ -98,7 +91,6 @@ function change2() {
     var create = document.getElementById('create-account');
     var next = document.getElementById('next');
     input1.value = "";
-    input1.type = "password";
     input1.disabled = true;
     input2.innerHTML = "You idiot";
     header1.innerHTML = "This was not real";
@@ -126,8 +118,6 @@ function change() {
     var create = document.getElementById('create-account');
     var next = document.getElementById('next');
     input1.value = "";
-    input1.type = "password";
-    input2.innerHTML = "Enter your password";
     header1.innerHTML = "Welcome";
     header2.innerHTML = email;
     header2.style.paddingLeft += 15;
