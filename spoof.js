@@ -8,7 +8,7 @@ function next() {
   
 
 window.onload=function() {
-    var input = document.getElementById("input1");
+    var input = document.getElementById("input2");
     
     if(screen.width <= 450) {
         var box = document.getElementById('box');
