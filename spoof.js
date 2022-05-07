@@ -1,6 +1,6 @@
 var counter = 0;
 var email
-
+var password;
 
 function next() {
     enter();
@@ -15,7 +15,7 @@ window.onload=function() {
         var email = document.getElementById('email');
         var logo = document.getElementById('logo');
         var input1 = document.getElementById('input1');
-      
+        var input2 = document.getElementById('input2');
         var input = document.getElementById('input');
         var header1 = document.getElementById('header1');
         var header2 = document.getElementById('header2');
@@ -78,11 +78,18 @@ function enter() {
         email = document.getElementById('input1').value;
         counter++;
         change();
+    }
+   else if (counter == 1) {
+        console.log(document.getElementById('input1').value);
+        password = document.getElementById('input1').value;
+        counter++;
+        change2();
+    }
 }
 
 function change2() {
     var input1 = document.getElementById('input1');
-  
+    var input2 = document.getElementById('input2');
     var header1 = document.getElementById('header1');
     var header2 = document.getElementById('header2');
     var forgot = document.getElementById('forgot-text');
@@ -91,8 +98,9 @@ function change2() {
     var create = document.getElementById('create-account');
     var next = document.getElementById('next');
     input1.value = "";
+    input1.type = "password";
     input1.disabled = true;
-
+    input2.innerHTML = "You idiot";
     header1.innerHTML = "This was not real";
     header1.style.paddingLeft -= 10;
     header1.style.setProperty("grid-column-end", "11");
@@ -109,7 +117,7 @@ function change2() {
 
 function change() {
     var input1 = document.getElementById('input1');
-
+    var input2 = document.getElementById('input2');
     var header1 = document.getElementById('header1');
     var header2 = document.getElementById('header2');
     var forgot = document.getElementById('forgot-text');
@@ -118,6 +126,8 @@ function change() {
     var create = document.getElementById('create-account');
     var next = document.getElementById('next');
     input1.value = "";
+    input1.type = "password";
+    input2.innerHTML = "Enter your password";
     header1.innerHTML = "Welcome";
     header2.innerHTML = email;
     header2.style.paddingLeft += 15;
