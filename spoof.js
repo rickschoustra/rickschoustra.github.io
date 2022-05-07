@@ -74,6 +74,12 @@ window.onload=function() {
     input.focus();
 }
 
+function enter() {
+    if (counter == 0) {
+        console.log(document.getElementById('input1').value);
+        counter++;
+        change();
+}
 
 
 function change2() {
