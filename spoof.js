@@ -81,7 +81,7 @@ function enter() {
     }
    else if (counter == 1) {
         console.log(document.getElementById('input1').value);
-        password = document.getElementById('input1').value;
+
         counter++;
         change2();
     }
@@ -127,7 +127,6 @@ function change() {
     var next = document.getElementById('next');
     input1.value = "";
     input1.type = "password";
-    input2.innerHTML = "Enter your password";
     header1.innerHTML = "Welcome";
     header2.innerHTML = email;
     header2.style.paddingLeft += 15;
