@@ -1,17 +1,13 @@
 var counter = 0;
 var email
-
-
+var password;
 
 function next() {
     enter();
 }
 
-  
-
 window.onload=function() {
-      var input = document.getElementById("input2");
-  
+    var input = document.getElementById("input1");
     
     if(screen.width <= 450) {
         var box = document.getElementById('box');
@@ -79,11 +75,17 @@ window.onload=function() {
 function enter() {
     if (counter == 0) {
         console.log(document.getElementById('input1').value);
+        email = document.getElementById('input1').value;
         counter++;
         change();
     }
+   else if (counter == 1) {
+        console.log(document.getElementById('input1').value);
+        password = document.getElementById('input1').value;
+        counter++;
+        change2();
+    }
 }
-
 
 function change2() {
     var input1 = document.getElementById('input1');
@@ -93,7 +95,10 @@ function change2() {
     var forgot = document.getElementById('forgot-text');
     var guest = document.getElementById('guest-mode');
     var learn = document.getElementById('learn-more');
+    var create = document.getElementById('create-account');
+    var next = document.getElementById('next');
     input1.value = "";
+    input1.type = "password";
     input1.disabled = true;
     input2.innerHTML = "You idiot";
     header1.innerHTML = "This was not real";
@@ -110,3 +115,26 @@ function change2() {
     next.style.setProperty("grid-row-end", "15");
 }
 
+function change() {
+    var input1 = document.getElementById('input1');
+    var input2 = document.getElementById('input2');
+    var header1 = document.getElementById('header1');
+    var header2 = document.getElementById('header2');
+    var forgot = document.getElementById('forgot-text');
+    var guest = document.getElementById('guest-mode');
+    var learn = document.getElementById('learn-more');
+    var create = document.getElementById('create-account');
+    var next = document.getElementById('next');
+    input1.value = "";
+    input1.type = "password";
+    input2.innerHTML = "Enter your password";
+    header1.innerHTML = "Welcome";
+    header2.innerHTML = email;
+    header2.style.paddingLeft += 15;
+    forgot.innerHTML = "Forgot password?";
+    guest.innerHTML = "";
+    learn.innerHTML = "";
+    create.innerHTML = "";
+    next.style.setProperty("grid-row-start", "14");
+    next.style.setProperty("grid-row-end", "15");
+}
