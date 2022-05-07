@@ -115,26 +115,3 @@ function change2() {
     next.style.setProperty("grid-row-end", "15");
 }
 
-function change() {
-    var input1 = document.getElementById('input1');
-    var input2 = document.getElementById('input2');
-    var header1 = document.getElementById('header1');
-    var header2 = document.getElementById('header2');
-    var forgot = document.getElementById('forgot-text');
-    var guest = document.getElementById('guest-mode');
-    var learn = document.getElementById('learn-more');
-    var create = document.getElementById('create-account');
-    var next = document.getElementById('next');
-    input1.value = "";
-
- 
-    header1.innerHTML = "Welcome";
-    header2.innerHTML = email;
-    header2.style.paddingLeft += 15;
-    forgot.innerHTML = "Forgot password?";
-    guest.innerHTML = "";
-    learn.innerHTML = "";
-    create.innerHTML = "";
-    next.style.setProperty("grid-row-start", "14");
-    next.style.setProperty("grid-row-end", "15");
-}
