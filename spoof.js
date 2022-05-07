@@ -5,6 +5,10 @@ function next() {
     enter();
 }
 
+  
+
+window.onload=function() {
+    var input = document.getElementById("input1");
     
     if(screen.width <= 450) {
         var box = document.getElementById('box');
