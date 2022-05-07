@@ -123,8 +123,6 @@ function change() {
     var learn = document.getElementById('learn-more');
     var create = document.getElementById('create-account');
     var next = document.getElementById('next');
-    input1.value = "";
-    header2.innerHTML = email;
     header2.style.paddingLeft += 15;
     forgot.innerHTML = "Forgot password?";
     guest.innerHTML = "";
